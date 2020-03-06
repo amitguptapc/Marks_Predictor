@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Marks Prediction</title>
+  </head>
+  <body>
+    <h1>
+      Marks Prediction
+    </h1>
+    <form action="/" method="post">
+      <input type="text" name="hours" placeholder="Enter Hours">
+      <input type="submit">
+    </form>
+    {% if your_marks %}
+    <h1>
+      Your Marks are :
+      <i>{{your_marks}}</i>
+    </h1>
+    {% endif %}
+  </body>
+</html>
